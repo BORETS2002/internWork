@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Template Project</title>
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
   <!-- <link rel="stylesheet" href="./css/main.css"> -->
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -16,28 +19,615 @@
   <!-- SITE HEADER START -->
 
   <header class="site-header">
-
+    <div class="container">
+         <nav class="  navbar-expand-lg ">
+            <div class="navbar header ">
+                <a class="header__logo" href="/">
+                <img class="header__logo-img" src="/images/LogoB.svg" alt="site logo">
+              </a>
+              <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="">
+                    <img id="menuIcon" src="/images/gamburger.svg" alt="gamburger site">
+                    <img id="arrowIcon" src="/images/x.svg" alt="" style="display: none;">
+                </span>
+              </button>
+              <div class="collapse navbar-collapse  " id="navbarNav">
+                <ul class="header header__list ">
+              <li class="heder__item">
+                <a class="header__item-text" href="#">Как это работает</a>
+              </li>
+              <li class="heder__item">
+                <a class="header__item-text" href="#">Инструкции </a>
+              </li>
+              <li class="heder__item">
+                <a class="header__item-text" href="#">Продукты</a>
+              </li> 
+              <li class="heder__item">
+                <a class="header__item-text" href="#">База знаний</a>
+              </li>
+              <li class="heder__item">
+                <a class="header__item-text " href="#">О нас</a>
+              </li>
+              <li class="heder__item ">
+                <a class="header__item-text not_hover" href="#">Вход</a>
+              </li>
+            </ul>
+              </div>
+            </div>
+         </nav>
+     
+    </div>
   </header>
-
+ 
   <!-- SITE HEADER END -->
 
 
   <!-- SITE MAIN START -->
   <main class="site-main">
-
-    <section class="hero">
+    <section>
+      <div class="container">
+        <div class="hero">
+          <div class="hero__wrapper">
+            <h1 class="hero__bigtext">
+              Управление запасами розничного магазина
+            </h1>
+            <p class="hero__smalltext">Использование сервиса 1С-Товары позволяет значительно упростить работу по формированию заявок поставщику.
+            </p>
+            <button class="hero__button">Заказать демонстрацию</button>
+          </div>
+          <img class="hero__img" src="/images/Groceryshopping-amico.svg" alt="">
+        </div>
       
+      </div>
     </section>
 
+<section class="cards">
+  <div class="container">
+    <div class="cards__grid">
+      <div class="card card--large">
+        <h2 class="card__title card__title--stock">Управление запасами</h2>
+        <p class="card__text">Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис работает с равномерным и редким спросом для разных видов товаров. Автоматически подбирает подходящий метод расчета и позволяет внести корректировки в выполняемые расчеты.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+      <div class="card card--large">
+        <h2 class="card__title card__title--auto-order">Автозаказ товаров</h2>
+        <p class="card__text">Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис работает с равномерным и редким спросом для разных видов товаров. Автоматически подбирает подходящий метод расчета и позволяет внести корректировки в выполняемые расчеты.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+      <div class="card card--small">
+        <h2 class="card__title card__title--analysis">Анализ магазина</h2>
+        <p class="card__text">Система контроля упущенных продаж позволяет увеличить выручку. Средний чек, минимальный чек, максимальный чек - это пример показателей, которые анализирует сервис 1С-Товары, а также предлагает ряд инструментов для управления ценой и торговой наценкой.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+      <div class="card card--small">
+        <h2 class="card__title card__title--forecast">Прогнозирование спроса</h2>
+        <p class="card__text">Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис работает с равномерным и редким спросом для разных видов товаров. Автоматически подбирает подходящий метод расчета и позволяет внести корректировки в выполняемые расчеты.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+      <div class="card card--small">
+        <h2 class="card__title card__title--supply">Управление поставками</h2>
+        <p class="card__text">Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис работает с равномерным и редким спросом для разных видов товаров. Автоматически подбирает подходящий метод расчета и позволяет внести корректировки в выполняемые расчеты.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+      <div class="card card--large">
+        <h2 class="card__title card__title--assortment">Управление ассортиментом</h2>
+        <p class="card__text">Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис работает с равномерным и редким спросом для разных видов товаров. Автоматически подбирает подходящий метод расчета и позволяет внести корректировки в выполняемые расчеты.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+      <div class="card card--large">
+        <h2 class="card__title card__title--sales">Управление продажами</h2>
+        <p class="card__text">Система контроля упущенных продаж позволяет увеличить выручку. Средний чек, минимальный чек, максимальный чек - это пример показателей, которые анализирует сервис 1С-Товары, а также предлагает ряд инструментов для управления ценой и торговой наценкой.</p>
+        <a href="#" class="card__button">Подробнее</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages">
+  <div class="container">
+    <div class="advantages__banner">
+      <div class="advantages__icon">
+        <img src="/images/sovga.svg" alt="Icon">
+      </div>
+      <p class="advantages__text">
+        Подключи любой продукт на 1 месяц бесплатно и оцени наши преимущества
+      </p>
+      <a href="#" class="advantages__button">Подключить сейчас</a>
+    </div>
+    <h2 class="advantages__title">С нами удобнее</h2>
+    <div class="advantages__content">
+      <div class="advantages__card advantages__card--left">
+        <h3 class="advantages__card-title">Без 1С-Товары</h3>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span> Лишний товар складируется и не продается
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span> Постоянно приходится думать какой продукт будет актуален, а какой стоит выводить из ассортимента
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span> Лишний товар складируется и не продается
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span> Постоянно приходится думать какой продукт будет актуален, а какой стоит выводить из ассортимента
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span>  Лишний товар складируется и не продается
+          </li>
+            <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span> Постоянно приходится думать какой продукт будет актуален, а какой стоит выводить из ассортимента  </li>
+            <li class="advantages__item">
+            <span class="advantages__icon-no">✗</span>  Лишний товар складируется и не продается  </li>
+        </ul>
+      </div>
+      <div class="advantages__card advantages__card--right">
+        <h3 class="advantages__card-title">Вместе с 1С-Товары</h3>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span> Организованная система остатков
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span> В магазине есть определенная ассортиментная матрица, поддерживающая актуальный ассортимент
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span> Рассчитанный прогноз спроса
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span> Система контроля упущенных продаж
+          </li>
+            <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span>  Организованная система остатков
+         <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span> В магазине есть определенная ассортиментная матрица, поддерживающая актуальный ассортимент
+          </li>
+            <li class="advantages__item">
+            <span class="advantages__icon-yes">✓</span> Система контроля упущенных продаж
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+ <section class="BigCarusel">
+<div class="container">
+<div class="wrapper">
+
+<div class="BigCarusel__MainBox">
+<h2 class="BigCarusel__MainBox-text">Популярные продукты</h2>
+<span>
+<a class="BigCarusel__MainBox-href" href="#">Все продукты</a>
+</span>
+</div>
+
+  <ul class="carousel" data-target="carousel">
+    <li class="card__carusel" data-target="card">
+    <div>
+      <div class="BigCarusel__title-box">
+<p class="BigCarusel__title" >1С-Товары 300</p>
+<span class="BigCarusel__summa">
+400 руб/мес
+
+</span>
+      </div>
+
+    <p class="BigCarusel__text" >Прогноз спроса с использованием сервера прогнозирования (ограничение – 300 товаров)
+Контроль товарных остатков и автоматический заказ товаров (ограничение – 300 товаров)
+Анализ работы розничного магазина или сети магазинов
+Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+</p>
+
+<span class="d-flex justify-content-end">
+<a class=" BigCarusel__href " href="#">Подробнее</a>
+</span>
+
+    </div>
+    
+    </li>
+ <li class="card__carusel" data-target="card">
+    <div>
+      <div class="BigCarusel__title-box">
+<p class="BigCarusel__title" >1С-Товары 300</p>
+<span class="BigCarusel__summa">
+400 руб/мес
+
+</span>
+      </div>
+
+    <p class="BigCarusel__text" >Прогноз спроса с использованием сервера прогнозирования (ограничение – 300 товаров)
+Контроль товарных остатков и автоматический заказ товаров (ограничение – 300 товаров)
+Анализ работы розничного магазина или сети магазинов
+Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+</p>
+
+<span class="d-flex justify-content-end">
+<a class=" BigCarusel__href " href="#">Подробнее</a>
+</span>
+
+    </div>
+    
+    </li>
+    <li class="card__carusel" data-target="card">
+    <div>
+      <div class="BigCarusel__title-box">
+<p class="BigCarusel__title" >1С-Товары 300</p>
+<span class="BigCarusel__summa">
+400 руб/мес
+
+</span>
+      </div>
+
+    <p class="BigCarusel__text" >Прогноз спроса с использованием сервера прогнозирования (ограничение – 300 товаров)
+Контроль товарных остатков и автоматический заказ товаров (ограничение – 300 товаров)
+Анализ работы розничного магазина или сети магазинов
+Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+</p>
+
+<span class="d-flex justify-content-end">
+<a class=" BigCarusel__href " href="#">Подробнее</a>
+</span>
+
+    </div>
+    
+    </li>
+   <li class="card__carusel" data-target="card">
+    <div>
+      <div class="BigCarusel__title-box">
+<p class="BigCarusel__title" >1С-Товары 300</p>
+<span class="BigCarusel__summa">
+400 руб/мес
+
+</span>
+      </div>
+
+    <p class="BigCarusel__text" >Прогноз спроса с использованием сервера прогнозирования (ограничение – 300 товаров)
+Контроль товарных остатков и автоматический заказ товаров (ограничение – 300 товаров)
+Анализ работы розничного магазина или сети магазинов
+Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+</p>
+
+<span class="d-flex justify-content-end">
+<a class=" BigCarusel__href " href="#">Подробнее</a>
+</span>
+
+    </div>
+    
+    </li> <li class="card__carusel" data-target="card">
+    <div>
+      <div class="BigCarusel__title-box">
+<p class="BigCarusel__title" >1С-Товары 300</p>
+<span class="BigCarusel__summa">
+400 руб/мес
+
+</span>
+      </div>
+
+    <p class="BigCarusel__text" >Прогноз спроса с использованием сервера прогнозирования (ограничение – 300 товаров)
+Контроль товарных остатков и автоматический заказ товаров (ограничение – 300 товаров)
+Анализ работы розничного магазина или сети магазинов
+Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+</p>
+
+<span class="d-flex justify-content-end">
+<a class=" BigCarusel__href " href="#">Подробнее</a>
+</span>
+
+    </div>
+    
+    </li> <li class="card__carusel" data-target="card">
+    <div>
+      <div class="BigCarusel__title-box">
+<p class="BigCarusel__title" >1С-Товары 300</p>
+<span class="BigCarusel__summa">
+400 руб/мес
+
+</span>
+      </div>
+
+    <p class="BigCarusel__text" >Прогноз спроса с использованием сервера прогнозирования (ограничение – 300 товаров)
+Контроль товарных остатков и автоматический заказ товаров (ограничение – 300 товаров)
+Анализ работы розничного магазина или сети магазинов
+Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+</p>
+
+<span class="d-flex justify-content-end">
+<a class=" BigCarusel__href " href="#">Подробнее</a>
+</span>
+
+    </div>
+    
+    </li>
+  </ul>
+  <div class="button-wrapper">
+    <button class="caruselButton" data-action="slideLeft"><img src="/images/ChapCarusel.svg" alt=""></button>
+    <button class="caruselButton" data-action="slideRight"><img src="/images/OngKarusel.svg" alt=""></button>
+  </div>
+</div>
+</div>
+
+</section>
+
+
+ <section class="reklama">
+  <div class="container">
+    <div class="reklama__wrapper">
+      <div class="reklama__wrapper-texBox">
+        <h2 class="reklama__wrapper-bigText">Предоставляем техподдержку для наших клиентов</h2>
+        <p class="reklama__wrapper-miniText">Если у вас возникнут сложности с использованием 1С-Товары, обращайтесь в нашу техподдержку. Техподдержка работает круглосуточно. Вы можете связаться с нами любыми удобными для Вас способами. При использовании техпомощи просим соблюдать <a  class="reklama__wrapper-infoMinitext" href="#"> правила обращения.</a> </p>
+      </div>
+      <div class="reklama__wrapper-infoBox">
+        <p class="reklama__wrapper-infotext">Вы можете связаться с нами через <a class="reklama__wrapper-infoMinitext" href="#">1С-Коннект и 1С-Товары. Поддержка пользователей</a> </p>
+<div class="reklama__wrapper-infoTel-box">
+  <div class="reklama__wrapper-infoTelText-box">
+  <span class="reklama__wrapper-infoTelText">Телефон техподдержки</span>
+  <a class="reklama__wrapper-infoTelText-Tel" href="tel:+74951110010">+7-495-111-00-10</a>
+  </div>
+  <div class="reklama__wrapper-emailBox">
+  <span class="reklama__wrapper-infoTelText">E-mail техподдержки</span>
+  <a class="reklama__wrapper-infoTelText-Tel" href="@gmail:info@rozn.info">info@rozn.info</a>
+  </div>
+</div>
+      </div>
+    </div>
+  
+  </div>
+ </section>
+
+
+
+<section class="content">
+  <div class="container">
+
+    <h2 class="content__title">Для розничных магазинов и ресторанов</h2>
+    <div class="containerBox">
+      <div class="container__left">
+        <img src="images/Grocery-shopping.svg" alt="Shopping Image" class="container__image">
+        <img src="images/Coffee-shop.svg" alt="Shopping Image" class="container__image">
+      </div>
+      <div class="container__right">
+        <div class="content__card">
+          <h3 class="content__title">Получайте рекомендации по управлению ассортиментом</h3>
+          <p class="content__text">
+
+
+      Для этого подключите бесплатно новый тариф «1С-Ритейл Чекер». <br> <br>
+
+Каждую неделю вам на почту будет приходить письмо с рекомендациями:
+какие товары необходимо срочно купить, чтобы избежать упущенной прибыли из-за пустых полок;
+какие товары у вас в избытке, а какие следует отнести к неликвидам;
+какие товары стоит пересчитать, чтобы быть уверенным в правильности учета.
+          </p>
+          <a href="#" class="content__link">Подробнее об 1С-Ритейл Чекер →</a>
+        </div>
+
+        <div class="content__card">
+          <h3 class="content__title">Прогнозируйте спрос и управляйте запасами</h3>
+          <p class="content__text">
+            Используйте 1С-Товары для более точного прогноза спроса. 1С-Товары учитывает средние продажи, тренды, период дефицита товара на полках, сезонность спроса, праздники, прогнозы рынка.
+          </p>
+          <a href="#" class="content__link">Подробнее об 1С-Товары →</a>
+        </div>
+
+        <div class="content__card">
+          <h3 class="content__title">Планируйте ассортимент без ошибок</h3>
+          <p class="content__text">
+         Узнайте, какие товары приносят вам прибыль и всегда должны быть в ассортименте. И, наоборот, выводите из ассортимента товары с низкой наценкой и оборачиваемостью. </p>
+         
+        </div>
+
+        <div class="content__card">
+          <h3 class="content__title">Контролируйте бизнес и повышайте прибыль</h3>
+          <p class="content__text">
+         Для этого используйте блок аналитики. <br> <br>
+
+Пробуйте разные варианты повышения продаж – новые товары, изменение наценки, перераспределение площади. Убедиться в правильности действий помогут отчеты. Блок аналитики доступен через Интернет и сделан как приборная панель индикаторов деятельности, что позволяет быстро заметить изменения. </p>
+         
+        </div>
+      </div>
+    </div>
+
+
+    <h2 class="content__title mt-5">Для оптовых поставщиков</h2>
+     <div class="containerBox">
+     
+      <div class="container__left">
+          <img src="images/Logistics.svg" alt="Shopping Image" class="container__image">
+      </div>
+
+
+      <div class="container__right">
+        <div class="content__card">
+          <h3 class="content__title">Планируйте поставки товаров в собственные или арендованные торговые точки</h3>
+          <p class="content__text">
+            Получайте с помощью 1С-Товары текущие остатки товаров в магазинах и правильно определяйте размер поставок. Система прогноза спроса, встроенная в 1С-Товары, поможет обеспечить постоянное наличие на полках магазинов ходового товара и позволит избежать «оверстока» на ваших складах.
+
+Для такого сценария работы предусмотрен специальный выгодный тариф «1С-Товары 300».
+          </p>
+          <a href="#" class="content__link">Подробнее о 1С-Товары 300 →</a>
+        </div>
+<div class="content__card">
+          <h3 class="content__title">Повышайте эффективность обработки полученных заказов</h3>
+          <p class="content__text">
+            1С-Товары позволяют синхронизировать наименования товаров у поставщика и магазина, что дает возможность автоматически загружать заявки от розничных магазинов в учетную систему и не тратить много времени на сопоставление номенклатуры.
+          </p>
+          <a href="#" class="content__link">Подробнее о 1С-Товары 300 →</a>
+        </div>
+
+     </div>
+     </div>
+
+</section>
+
+
+  <section class="consultation">
+  <div class="container">
+  
+    <div class="consultation_wrap">
+      <div class="consultation__text">
+        <h2 class="consultation__title">Хотите бесплатную консультацию? Оставляйте заявку</h2>
+        <p class="consultation__description">
+          Оставляйте заявку и наши менеджеры свяжутся с Вами в ближайшее время
+        </p>
+      </div>
+      <form class="consultation__form">
+        <label for="name" class="form__label">Ваше имя</label>
+        <input type="text" id="name" class="form__input" placeholder="Сергей" required>
+        
+        <label for="phone" class="form__label">Ваш телефон</label>
+        <input type="tel" id="phone" class="form__input" placeholder="Ваш телефон" required>
+        
+        <label for="email" class="form__label">Ваш e-mail</label>
+        <input type="email" id="email" class="form__input" placeholder="Ваш e-mail" required>
+        
+        <div class="from__box">
+        <p class="form__disclaimer d-inline-block">
+          Нажимая кнопку, вы даете согласие на
+           <a href="#" class="content__link d-inline">обработку персональных данных</a>  в соответствии с 
+           
+            <a href="#" class=" text-decoration-none  text-dark ">     политикой конфиденциальности  </a>
+         
+        </p>
+<span class="form__button-box ">
+        <button class="form__button" type="submit" >Отправить</button>
+</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  </section>
+
+
+
+<section class="faq ">
+  <div class="container">
+    <h2 class="faq__title mb-5">Ответы на вопросы</h2>
+
+    <div class="faq__accordion-item">
+      <div class="faq__accordion-header">С чего начать работу с 1С-Товары?</div>
+      <div class="faq__accordion-body">Для этого подключите бесплатно новый тариф «1С-Ритейл Чекер».
+
+Каждую неделю вам на почту будет приходить письмо с рекомендациями:
+какие товары необходимо срочно купить, чтобы избежать упущенной прибыли из-за пустых полок;
+какие товары у вас в избытке, а какие следует отнести к неликвидам;
+какие товары стоит пересчитать, чтобы быть уверенным в правильности учета.</div>
+    </div>
+
+    <div class="faq__accordion-item">
+      <div class="faq__accordion-header">Как подключить 1С-Ритейл Чекер и 1С-Товары?</div>
+      <div class="faq__accordion-body">Для этого подключите новый тариф "1С-Ритейл Чекер" бесплатно...</div>
+    </div>
+
+    <div class="faq__accordion-item">
+      <div class="faq__accordion-header">Средний чек, о чем нам может рассказать?</div>
+      <div class="faq__accordion-body">Средний чек расскажет нам о полезных показателях...</div>
+    </div>
+
+    <div class="faq__accordion-item">
+      <div class="faq__accordion-header">Сценарии автозаказа сервиса 1С-Товары</div>
+      <div class="faq__accordion-body">Описание сценариев автозаказа в системе 1С-Товары.</div>
+    </div>
+
+
+<div class="faq__cta-btn-box   mt-5">
+<p class="faq__cta-btn-box-text">Переходи в раздел “Как это работает” , что бы получить больше полезной информации
+</p>
+    <a href="#" class="faq__cta-btn">Как это работает</a>
+</div>
+  </div>
+</section>
+
+<section class="companies">
+<div class="container">
+    <h2 class="companies__title">Компании которые выбирают 1C-Товары</h2>
+    <div class="companies__list">
+        <div class="companies__item">
+            <img src="/images/sullivan-university.svg" alt="Sullivan University" class="companies__logo">
+        </div>
+        <div class="companies__item">
+            <img src="/images/redbullenergydrink.svg" alt="Red Bull" class="companies__logo">
+        </div>
+        <div class="companies__item">
+            <img src="/images/dollar-1.svg" alt="Dollar" class="companies__logo">
+        </div>
+        <div class="companies__item">
+            <img src="/images/makita-logo.svg" alt="Makita" class="companies__logo">
+        </div>
+        <div class="companies__item">
+            <img src="/images/pioneer.svg" alt="Pioneer" class="companies__logo">
+        </div>
+        <div class="companies__item">
+            <img src="/images/discord-logo-2.svg" alt="Discord" class="companies__logo">
+        </div>
+    </div>
+</div>
+
+</section>
   </main>
+
 
   <!-- SITE MAIN END -->
 
   <!-- SITE FOOTER START -->
-  <footer class="site-footer">
+ <footer class="footer">
+    <div class="container">
+    <div class="footer__wrapper">
+    <div class="footer__logoBox">
+        <div class="footer-logo">
+            <img src="/images/OqLogo.svg" alt="1C-Товары">
+        </div>
+    
+        <div class="footer-contact">
+        <span class="footer-contact__box ">
+            <p class="footer-contact-text">Линия консультации</p>
+            <a href="tel:+74951110010">+7(495)-111-00-10</a>
+        </span>
+        <span class="footer-contact__box ">
 
-  </footer>
-  <!-- SITE FOOTER END -->
+            <p class="footer-contact-text">Наш e-mail</p>
+            <a href="mailto:info@rozn.info">info@rozn.info</a>
+        </span>
+            <button class="btn-call">Заказать звонок</button>
+        </div>
+        <div class="footer__miniText-box">
+        <p class="footer__miniText" >Для активации перейдите на portal.1c.ru или обратитесь к Вашему партнеру 1С.</p>
+        <a class="footer__miniText-href" href="#">Инструкция по установке сервиса</a>
 
+        </div>
+    </div>
+        <div class="footer-info">
+<p class="footer-info__bigText mb-4">Информация</p>
+            <p><a href="#">Как это работает</a></p>
+            <p><a href="#">Инструкции</a></p>
+            <p><a href="#">Блог</a></p>
+            <p><a href="#">О нас</a></p>
+        </div>
+        <div class="footer-products">
+<p class="footer-info__bigText mb-4">Продукты</p>
+
+            <p><a href="#">1C-Ритейл Чекер Демо</a></p>
+            <p><a href="#">1C-Товары.Тестовый для магазина на 1 месяц</a></p>
+            <p><a href="#">1C-Ритейл Чекер</a></p>
+            <p><a href="#">1C-Товары 300</a></p>
+            <p><a href="#">1C-Товары 30000</a></p>
+        </div>
+
+
+<hr class="mb-4  h3 w-100">
+
+        <div class="footer-bottom">
+            
+            <p>Сайт создан - <a href="https://wtstudio.ru">wtstudio.ru</a></p>
+        </div>
+    </div>
+    </div>
+</footer>
+
+  <!-- SITE FOOTER END --> 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
+
